@@ -13,6 +13,14 @@
 		01175357225DBAE400EBAFBC /* Collection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01175355225DBAE400EBAFBC /* Collection.xcdatamodeld */; };
 		01175359225DBAE500EBAFBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01175358225DBAE500EBAFBC /* Assets.xcassets */; };
 		0117535C225DBAE500EBAFBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0117535A225DBAE500EBAFBC /* LaunchScreen.storyboard */; };
+		01175365225DC2E300EBAFBC /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01175363225DBB5500EBAFBC /* ImageViewController.swift */; };
+		01175367225DCF8100EBAFBC /* ModelStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01175366225DCF8100EBAFBC /* ModelStorage.swift */; };
+		0117536B225DDA8900EBAFBC /* FileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0117536A225DDA8900EBAFBC /* FileViewController.swift */; };
+		0117536D225DF99700EBAFBC /* ObjectPojo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0117536C225DF99700EBAFBC /* ObjectPojo.swift */; };
+		0117536F225E0B1700EBAFBC /* Serialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0117536E225E0B1700EBAFBC /* Serialize.swift */; };
+		01175371225E93AB00EBAFBC /* RestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01175370225E93AB00EBAFBC /* RestViewController.swift */; };
+		01175373225F73E500EBAFBC /* BusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01175372225F73E500EBAFBC /* BusinessViewController.swift */; };
+		01175375225F7D8F00EBAFBC /* GeoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01175374225F7D8F00EBAFBC /* GeoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		01175358225DBAE500EBAFBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0117535B225DBAE500EBAFBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0117535D225DBAE500EBAFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01175363225DBB5500EBAFBC /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		01175366225DCF8100EBAFBC /* ModelStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStorage.swift; sourceTree = "<group>"; };
+		0117536A225DDA8900EBAFBC /* FileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileViewController.swift; sourceTree = "<group>"; };
+		0117536C225DF99700EBAFBC /* ObjectPojo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectPojo.swift; sourceTree = "<group>"; };
+		0117536E225E0B1700EBAFBC /* Serialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serialize.swift; sourceTree = "<group>"; };
+		01175370225E93AB00EBAFBC /* RestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestViewController.swift; path = ../classes/RestViewController.swift; sourceTree = "<group>"; };
+		01175372225F73E500EBAFBC /* BusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessViewController.swift; sourceTree = "<group>"; };
+		01175374225F7D8F00EBAFBC /* GeoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +72,9 @@
 		0117534D225DBAE400EBAFBC /* Collection */ = {
 			isa = PBXGroup;
 			children = (
+				01175369225DDA6600EBAFBC /* classes */,
+				01175368225DDA2800EBAFBC /* controllers */,
 				0117534E225DBAE400EBAFBC /* AppDelegate.swift */,
-				01175350225DBAE400EBAFBC /* ViewController.swift */,
 				01175352225DBAE400EBAFBC /* Main.storyboard */,
 				01175358225DBAE500EBAFBC /* Assets.xcassets */,
 				0117535A225DBAE500EBAFBC /* LaunchScreen.storyboard */,
@@ -65,6 +82,29 @@
 				01175355225DBAE400EBAFBC /* Collection.xcdatamodeld */,
 			);
 			path = Collection;
+			sourceTree = "<group>";
+		};
+		01175368225DDA2800EBAFBC /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				01175370225E93AB00EBAFBC /* RestViewController.swift */,
+				01175350225DBAE400EBAFBC /* ViewController.swift */,
+				01175363225DBB5500EBAFBC /* ImageViewController.swift */,
+				0117536A225DDA8900EBAFBC /* FileViewController.swift */,
+				01175372225F73E500EBAFBC /* BusinessViewController.swift */,
+				01175374225F7D8F00EBAFBC /* GeoViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		01175369225DDA6600EBAFBC /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				01175366225DCF8100EBAFBC /* ModelStorage.swift */,
+				0117536C225DF99700EBAFBC /* ObjectPojo.swift */,
+				0117536E225E0B1700EBAFBC /* Serialize.swift */,
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +178,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0117536B225DDA8900EBAFBC /* FileViewController.swift in Sources */,
+				01175371225E93AB00EBAFBC /* RestViewController.swift in Sources */,
+				01175367225DCF8100EBAFBC /* ModelStorage.swift in Sources */,
+				01175375225F7D8F00EBAFBC /* GeoViewController.swift in Sources */,
+				0117536F225E0B1700EBAFBC /* Serialize.swift in Sources */,
 				01175351225DBAE400EBAFBC /* ViewController.swift in Sources */,
 				01175357225DBAE400EBAFBC /* Collection.xcdatamodeld in Sources */,
+				01175365225DC2E300EBAFBC /* ImageViewController.swift in Sources */,
+				0117536D225DF99700EBAFBC /* ObjectPojo.swift in Sources */,
+				01175373225F73E500EBAFBC /* BusinessViewController.swift in Sources */,
 				0117534F225DBAE400EBAFBC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,12 +335,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TNULAWK25L;
 				INFOPLIST_FILE = Collection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = e.Collection;
+				PRODUCT_BUNDLE_IDENTIFIER = e.Collection.IJK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,12 +353,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TNULAWK25L;
 				INFOPLIST_FILE = Collection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = e.Collection;
+				PRODUCT_BUNDLE_IDENTIFIER = e.Collection.IJK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
